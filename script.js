@@ -76,4 +76,4 @@ function takeCommand(message) {
     window.open(`https://www.google.com/search?q=${message.replace("Alexa","")}`,
  "_blank" )
   }
-} please solve only i question error 
+} 
