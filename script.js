@@ -7,7 +7,7 @@ function speak(text) {
   text_speak.rate = 1;
   text_speak.pitch = 1;
   text_speak.volume = 1;
-  text_speak.lang = "hi-GB";
+  text_speak.lang = "hi-IN";
   window.speechSynthesis.speak(text_speak);
 }
 
@@ -22,9 +22,9 @@ function wishMe() {
     speak("Good Evening Sir");
   }
 }
-window.addEventListener("load", () => {
-  wishMe();
-});
+ window.addEventListener("load", () => {
+   wishMe();
+ });
 let speechRecognition =
   window.speechRecognition || window.webkitSpeechRecognition;
 let recognition = new speechRecognition();
@@ -70,10 +70,9 @@ function takeCommand(message) {
     let date=new Date().toLocaleString(undefined,{day:"numeric",month:"short"})
     speak(date)
   }
-   else {
-   let finalText=`"this is what i found on internet regarding" + message.replace("Alexa","") || message.replace("alaxa", "")`
-    speak(finalText)
-    window.open(`https://www.google.com/search?q=${message.replace("Alexa","")}`,
- "_blank" )
-  }
+   else{
+        let finalText="this is what i found on internet regarding" + message.replace("alexa","") || message.replace("alexa","")
+        speak(finalText)
+        window.open(`https://www.google.com/search?q=${message.replace("alaxa","")}`,"_blank")
+    }
 } 
