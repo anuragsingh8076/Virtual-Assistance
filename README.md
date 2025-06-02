@@ -1,6 +1,3 @@
-# Virtual-Voice-Assistance
-
-
 ## 🧠 Virtual Voice Assistant
 
 A smart browser-based voice assistant built with **HTML**, **CSS**, and **JavaScript**.
